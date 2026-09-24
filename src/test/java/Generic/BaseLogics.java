@@ -46,7 +46,7 @@ public class BaseLogics implements Autoconstant {
 
 		if (Name.equalsIgnoreCase("Chrome")) {
 			driver = new ChromeDriver();
-			
+
 		} 
 		
 		else if (Name.equalsIgnoreCase("Firefox")) {
@@ -58,6 +58,7 @@ public class BaseLogics implements Autoconstant {
 		driver.manage().window().maximize();
 		Thread.sleep(1000);
 		LogUtil.info("Browser launched and navigated to: " + URL);
+		System.out.println("Browser launched and navigated to URL");
 
 	}
 
