@@ -60,6 +60,7 @@ public class BaseLogics implements Autoconstant {
 		LogUtil.info("Browser launched and navigated to: " + URL);
 		System.out.println("Browser launched and navigated to URL");
         //Test
+		//OKay
 	}
 
 //	@AfterClass(groups= {"Regression","Smoke","Sanity"})
