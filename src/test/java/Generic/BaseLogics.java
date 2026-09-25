@@ -2,9 +2,6 @@ package Generic;
 
 import org.testng.annotations.Test;
 
-
-
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
@@ -47,34 +44,49 @@ public class BaseLogics implements Autoconstant {
 		if (Name.equalsIgnoreCase("Chrome")) {
 			driver = new ChromeDriver();
 
-		} 
-		
+		}
+
 		else if (Name.equalsIgnoreCase("Firefox")) {
 
 			driver = new FirefoxDriver();
 		}
-		
-		driver.get(URL);
-		driver.manage().window().maximize();
-		Thread.sleep(3000);
-		LogUtil.info("Browser launched and navigated to: " + URL);
-		System.out.println("Browser launched and navigated to URL");
-        
+
+		int URLNo = 2;
+
+		switch (URLNo) {
+		case 1:
+			System.out.println("This is Case 1");
+			driver.get(URL);
+			driver.manage().window().maximize();
+			Thread.sleep(3000);
+			LogUtil.info("Browser launched and navigated to: " + URL);
+			System.out.println("Browser launched and navigated to URL");
+			break;
+
+		case 2:
+
+			System.out.println("This is Case 2");
+			driver.get(OrangeHRM_URL);
+			driver.manage().window().maximize();
+			Thread.sleep(3000);
+			LogUtil.info("Browser launched and navigated to: " + OrangeHRM_URL);
+			System.out.println("Browser launched and navigated to URL");
+			break;
+		}
+
 	}
 
-//	@AfterClass(groups= {"Regression","Smoke","Sanity"})
+	@AfterClass(groups= {"Regression","Smoke","Sanity"})
 	public void CloseTab() {
 		driver.close();
 		LogUtil.info("Browser tab closed.");
 	}
-	
+
 	@AfterMethod()
-	public void afterMethod(ITestResult result)
-	{
-		if(result.getStatus()==ITestResult.FAILURE)
-		{
+	public void afterMethod(ITestResult result) {
+		if (result.getStatus() == ITestResult.FAILURE) {
 			int printStatus = result.getStatus();
-			System.out.println("This is status"+printStatus);
+			System.out.println("This is status" + printStatus);
 		}
 	}
 

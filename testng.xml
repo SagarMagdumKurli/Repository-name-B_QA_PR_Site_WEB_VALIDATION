@@ -14,18 +14,19 @@
 	  </groups> -->
 
 		<classes>
-				<class name="TestScripts.VerifyformSubmission" />
-		<!--	 <class name="TestScripts.VerifyRegistrationFlow" />
+			<class name="TestScripts.A_Orange_VerifyLogInFunctionfor" />
+	<!--	    <class name="TestScripts.VerifyformSubmission" />
+			<class name="TestScripts.VerifyRegistrationFlow" />
 			<class name="TestScripts.Verify_Ecommerce_LogInFunctionality" />
 			<class name="TestScripts.Verify_ECommerce_ProductListingPageValidation" />-->
 		</classes>
 	</test>
-	
-	
+
+
 	<!--   ###    -->
 	<!--   ###    -->
 
-<!--
+	<!--
 	<test thread-count="5" name="FirefoxTest">
 		<parameter name="browser" value="Firefox"> </parameter>
 		

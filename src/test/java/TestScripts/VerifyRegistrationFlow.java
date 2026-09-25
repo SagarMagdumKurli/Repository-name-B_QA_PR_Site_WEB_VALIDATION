@@ -1,12 +1,8 @@
 package TestScripts;
 
-import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
-import com.aventstack.extentreports.ExtentTest;
-
 import Generic.BaseLogics;
-import POM.FormSubmission;
 import POM.UserAuthentication;
 
 public class VerifyRegistrationFlow extends BaseLogics {
