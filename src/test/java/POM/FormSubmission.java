@@ -101,6 +101,7 @@ public class FormSubmission extends BaseLogics {
 		WAIT(formSubmission);
 		formSubmission.click();
 		chiledTest = parentTest.createNode("Click on form submission CTA");
+		
 	}
 
 	private void EnterName(String name) {
