@@ -93,6 +93,14 @@ public class FormSubmission extends BaseLogics {
 
 	private void WAIT(WebElement element){
 		
+		System.out.println("Current URL: " + driver.getCurrentUrl());
+		System.out.println("Page Title: " + driver.getTitle());
+
+		System.out.println("Form Submission elements found: "
+		        + driver.findElements(By.xpath("//span[text()='Form Submission']")).size());
+
+		System.out.println("Page source contains Form Submission: "
+		        + driver.getPageSource().contains("Form Submission"));
 		
 		
 		

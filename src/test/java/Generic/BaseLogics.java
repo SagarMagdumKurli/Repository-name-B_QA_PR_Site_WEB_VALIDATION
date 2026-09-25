@@ -56,11 +56,10 @@ public class BaseLogics implements Autoconstant {
 		
 		driver.get(URL);
 		driver.manage().window().maximize();
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		LogUtil.info("Browser launched and navigated to: " + URL);
 		System.out.println("Browser launched and navigated to URL");
-        //Test
-		//OKay
+        
 	}
 
 //	@AfterClass(groups= {"Regression","Smoke","Sanity"})
