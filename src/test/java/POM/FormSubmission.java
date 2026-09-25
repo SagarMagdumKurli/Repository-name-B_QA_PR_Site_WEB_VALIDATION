@@ -91,20 +91,29 @@ public class FormSubmission extends BaseLogics {
 
 	}
 
-	private void WAIT(WebElement element) {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
+	private void WAIT(WebElement element){
+		
+		
+		
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 
-	private void clickFormSubmission() {
+	private void clickFormSubmission() throws Exception {
+		
+		
+		
 		WAIT(formSubmission);
 		formSubmission.click();
 		chiledTest = parentTest.createNode("Click on form submission CTA");
 		
 	}
 
-	private void EnterName(String name) {
+	private void EnterName(String name) throws Exception{
+		Thread.sleep(2000);
+		driver.navigate().refresh();
+		Thread.sleep(2000);
 		WAIT(nameField);
 		nameField.sendKeys(name);
 		chiledTest = parentTest.createNode("Enter Name");
