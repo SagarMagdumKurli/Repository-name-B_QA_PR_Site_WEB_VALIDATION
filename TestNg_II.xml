@@ -15,9 +15,9 @@
 
 
 		<classes>
-		<!-- <class name="TestScripts.VerifyformSubmission" />-->	
+		<!-- <class name="TestScripts.VerifyformSubmission" />
 			<class name="TestScripts.VerifyRegistrationFlow" />
-		<!--	<class name="TestScripts.Verify_Ecommerce_LogInFunctionality" />-->
+		<class name="TestScripts.Verify_Ecommerce_LogInFunctionality" />-->
 		</classes>
 	</test>
 	
